@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Faizul Islam's Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 50px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Faizul Islam</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+			  <li class="nav-item"><a href="#research-section" class="nav-link"><span>Research Papers</span></a></li>
+			  <li class="nav-item"><a href="#achievement-section" class="nav-link"><span>Achievements</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/my_image.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Assalamu alaikum</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Faizul Islam</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Data Scientist  ',
+						'Data Analyst  ',
+						'Researcher ',
+						'Storyteller   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 100); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <!-- <h6>A Data-driven and detail-oriented aspiring Data Scientist with a strong academic background in Statistics and hands-on experience in research, data analysis, and machine learning. Demonstrated success in leading projects, publishing impactful research, and using BI tools and programming languages to derive actionable insights.</h6> -->
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.kaggle.com/faizulislam19095" class="btn btn-primary py-3 px-4">Kaggle</a> 
+							<a href="https://github.com/IamFaizul?tab=repositories" class="btn btn-primary py-3 px-4">Github</a>
+							<a href="https://medium.com/@faizulislam095" class="btn btn-primary py-3 px-4">Medium</a>
+							<a href="https://www.linkedin.com/in/faizul-islam-669941203/" class="btn btn-primary py-3 px-4">LinkedIn</a></p>
+
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="my_pic.jpg" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<!-- <p><span class="title-s">Name: </span> <span>Rishabh Mishra</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Senior Data Analyst</span></p>
+										<p><span class="title-s">Experience: </span> <span>5 Years 3 Months</span></p>
+										<p><span class="title-s">Address: </span> <span>Bengaluru, India</span></p> -->
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<!-- <p class="title-s">Skills</p> -->
+									<!-- <span>SQL</span> <span class="pull-right">95%</span> -->
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<!-- <span>PYTHON</span> <span class="pull-right">85%</span> -->
+									<!-- <div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									 -->
+									<!-- <span>Data Visualization</span> <span class="pull-right">90%</span> -->
+									<!-- <div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div> -->
+									
+									<!-- <span>Statistical Analysis</span> <span class="pull-right">85%</span> -->
+									<!-- <div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div> -->
+									
+									<!-- <span>Machine Learning</span> <span class="pull-right">80%</span> -->
+									<!-- <div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-12 text-left pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>I'm a Data-driven and detail-oriented aspiring Data Scientist with a strong foundation in Statistics and extensive hands-on experience in research, data analysis, machine learning and deep learning. Skilled at transforming complex datasets into meaningful insights using Python, SQL, and Power BI, with a proven ability to connect analytical findings with impactful decisions. Demonstrated success in leading data-driven projects, publishing impactful research, and delivering business-focused analytical solutions. Passionate about applying data science to solve practical problems, optimize performance, and create measurable impact.</p>
+								<ul class="about-info mt-4 px-md-0 px-5">
+  <li><span>Profile:    </span> <span>    Data Science &amp; Analytics</span></li>
+  <li><span>Domain:</span> <span>Retail, E-commerce, FMCG, Public Health &amp; Education</span></li>
+  <li><span>Education:</span> <span>BSc in Statistics</span></li>
+  <li><span>Programming&nbsp;Languages:</span> <span>Python, R</span></li>
+  <li><span>Statistical&nbsp;Software:</span> <span>SPSS, STATA, SAS</span></li>
+  <li><span>Database&nbsp;Management:</span> <span>SQL</span></li>
+  <li><span>BI Tools:</span> <span>Microsoft Power BI, Tableau</span></li>
+  <li><span>Libraries:</span> <span>Numpy, Pandas, Matplotlib, Seaborn, Scikit-learn, Keras, Tensorflow</span></li>
+</ul>
+
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3 justify-content-center text-center">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="20">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<!-- <p><a href="https://www.linkedin.com/in/rishabhnmishra/" class="btn btn-primary py-3 px-3">LinkedIn</a></p> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://docs.google.com/document/d/19KCUyl5VLDEG2LjyFQdZW4CscnqMOGjk/edit?usp=sharing&ouid=107969854324927973965&rtpof=true&sd=true" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+          </div>
+        </div>
+		<section id="education" class="ftco-section">
+  <div class="container text-center pb-5"> <!-- 👈 Center everything here -->
+
+    <div class="row justify-content-center">
+      <div class="col-md-12">
+        <h1 class="big-4">Education</h1>
+        <div class="underline mx-auto"></div> <!-- 👈 centers underline -->
+      </div>
+    </div>
+
+    <br>
+
+ <div class="row justify-content-center">
+  <!-- SUST -->
+  <div class="col-md-5">
+    <div class="resume-wrap ftco-animate">
+      <span class="date">2020–2025</span>
+      <div class="edu-header">
+        <img src="images/sust_logo_1_50x55.png" alt="SUST Logo" class="edu-logo">
+        <h2>B.Sc. in Statistics</h2>
+      </div>
+      <span class="position">Shahjalal University of Science and Technology, Sylhet</span>
+      <p class="cgpa">CGPA: <strong>3.86/4.00</strong> — Ranked <strong>2nd</strong> in a class of 65</p>
+    </div>
+  </div>
+
+  <!-- BN -->
+  <div class="col-md-5">
+    <div class="resume-wrap ftco-animate">
+      <span class="date">2018–2019</span>
+      <div class="edu-header">
+        <img src="images/bn_4.png" alt="BN Logo" class="edu-logo">
+        <h2>Higher Secondary</h2>
+      </div>
+      <span class="position">Bangladesh Navy School & College, Mongla</span>
+      <p class="cgpa">Grade: <strong>A+ (GPA: 5.0/5.0)</p>
+    </div>
+  </div>
+</div>
+
+
+    
+</section>
+		  
+  <div class="container text-center pb-5"> <!-- 👈 Center everything here -->
+
+    <div class="row justify-content-center">
+      <div class="col-md-12">
+        <h1 class="big-4">Experience</h1>
+        <div class="underline mx-auto"></div> <!-- 👈 centers underline -->
+      </div>
+    </div>
+
+    <br>
+
+ <div class="row justify-content-center">
+  <!-- onwards -->
+  <div class="col-md-5">
+    <div class="resume-wrap ftco-animate">
+      <span class="date">Aug'25-Oct'25</span>
+      <div class="edu-header">
+		<h2>Data Analyst Intern</h2>
+        <img src="images/onwards_with_bgc (1).png" alt="onwards Logo" class="edu-logo">
+        
+      </div>
+      <span class="position">Onwards Analytics</span>
+	  <br></br>
+      <p class="internship">During my remote internship at Onwards Analytics, an Australian data analytics company, I contributed to high-impact data analytics projects, applying statistical and business intelligence techniques to optimize operations and enhance customer insights. I worked on initiatives such as shipping cost optimization, RFM Segmentation and CLTV modeling using Probabilistic models along with machine learning models, explored Google Analytics 4 for digital performance tracking, and developed data-driven business reports to support strategic decision-making.</p>
+    </div>
+  </div>
+
+  <!-- datakothon -->
+  <div class="col-md-5">
+    <div class="resume-wrap ftco-animate">
+      <span class="date">June'25-Aug'25</span>
+      <div class="edu-header">
+		<h2>Intern Researcher</h2>
+        <img src="images/dk_4.png" alt="dk Logo" class="edu-logo">
+        
+      </div>
+      <span class="position">Datakothon Research Lab</span>
+	  <br></br>
+      <p class="internship">Completed a research internship at DataKothon Research Lab, where I gained hands-on exposure to the complete AI research pipeline — including problem formulation, literature review, data collection and preprocessing, model development, experimentation, evaluation, and paper writing. Strengthened my understanding of machine learning methodologies and the process of translating research ideas into publishable results.</p>
+    </div>
+  </div>
+
+    
+</section>
+
+		<br>
+		<br>
+
+		
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <!-- <p>Below are the sample Data Analytics projects on SQL, Python, Power BI & ML.</p> -->
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/IamFaizul/60-Days-of-SQL-Challenge" class="block-20 zoom-effect" style="background-image: url('images/sql.jpg');">
+              
+			</a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/IamFaizul/60-Days-of-SQL-Challenge">60 Days of SQL Challenge</a></h3>
+                <p>	Daily practice of intermediate and advanced SQL using MySQL on real-world datasets (retail, e-commerce, finance, FMCG). Focused on complex queries, window functions, CTEs, optimization, and solving business-oriented problems.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/IamFaizul/Project-PersonalityLens/blob/main/Introvert_Extrovert.ipynb" class="block-20 zoom-effect" style="background-image: url('images/pls2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/IamFaizul/Project-PersonalityLens/blob/main/Introvert_Extrovert.ipynb">PersonalityLens: Predicting Personality Traits Through Data</a></h3>
+                <p>Developed an ML model to predict introvert–extrovert traits. Conducted EDA, statistical testing, and feature importance analysis; reached 97.6% accuracy using Random Forest.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/IamFaizul/CO2_emission_prediction_project_Time_Series/blob/main/co2-emissions-prediction-by-mavericks.ipynb" class="block-20 zoom-effect" style="background-image: url('images/co2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/IamFaizul/CO2_emission_prediction_project_Time_Series/blob/main/co2-emissions-prediction-by-mavericks.ipynb"> CO₂ Emission Prediction in 2030</a></h3>
+                <p>Applied machine learning and time series models (FB Prophet, ARIMA) to predict country-level CO₂ emissions in 2030 and analyze trends.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/IamFaizul/Lung-Cancer-Prediction-Project-ML/blob/main/lung-cancer-prediction-eda-smote-modeling.ipynb" class="block-20 zoom-effect" style="background-image: url('images/lc.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/IamFaizul/Lung-Cancer-Prediction-Project-ML/blob/main/lung-cancer-prediction-eda-smote-modeling.ipynb">Lung Cancer Prediction using Supervised Machine Learning Models</a></h3>
+				  <p>Developed a lung cancer prediction model using supervised machine learning algorithms to classify patients based on clinical and lifestyle features. Performed data preprocessing, SMOTE, and model evaluation across multiple classifiers to identify key risk factors and improve early detection accuracy.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb">Customer Segmentation using clustering model</a></h3>
+				  <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
+				</div>
+			  </div>
+			</div>
+			</div>
+		     <div class="row">
+      <div class="col-12">
+        <div class="ftco-hireme img margin-top"
+             style="background-image:url('images/sea2.jpg'); background-size:cover; background-position:center; padding:80px 0; border-radius:8px; margin-top:50px;">
+          <div class="row justify-content-center">
+            <div class="col-md-7 ftco-animate text-center" style="position:relative;">
+              <h2 style="color:#fff;">More projects on <span style="color:#d4af37;">Kaggle and GitHub</span></h2>
+              <br>
+              <p>
+                <a href="https://www.kaggle.com/faizulislam19095" target="_blank" rel="noopener noreferrer" class="btn btn-primary py-3 px-5">Kaggle</a>
+                <a href="https://github.com/IamFaizul?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn btn-primary py-3 px-5">GitHub</a>
+              </p>
+            </div>
+          </div>
+        </div> <!-- end hireme -->
+      </div>
+    </div>
+
+  </div> <!-- end container -->
+</section>
+
+	
+			<!-- </div> -->
+		</div>
+	</section>
+	<!-- <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="20">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="30">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="1000">0</strong>
+                <span>Mentored Students</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="500">0</strong>
+                <span>Cups of coffee</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/my_pic.jpg)">
+			<!-- <div class="container"> -->
+				<!-- <div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a href="https://github.com/rishabhnmishra" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div> -->
+				</div>
+			<!-- </div> -->
+		<!-- </div>
+	</section> --> -->
+
+<section class="ftco-section" id="research-section" style="background-color:#000; color:#ccc; padding:80px 0;">
+  <div class="container text-center pb-5">
+    <div class="row justify-content-center mb-5 pb-3">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h1 class="big">Research</h1>
+        <h2 class="mb-4">Research Papers</h2>
+        <!-- <p>Selected publications and ongoing research projects.</p> -->
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-8 text-left ftco-animate">
+
+        <!-- 1. Health Science Reports -->
+        <div class="resume-wrap p-4 mb-4 shadow-sm" 
+		style="background:#111; border-left:4px solid #FEBA17; padding:20px 25px; border-radius:6px; margin-bottom:25px;">
+          <h5>
+            <strong>
+              <a href="#" target="_blank" class="paper-link">
+                1. Predicting Child Development Across Literacy, Physical, Learning, and Social-Emotional Domains Using Supervised Machine Learning: A Cross-Sectional Study Based on MICS 2019 Bangladesh <span style="color:#FFFCFB;  font-size:13px;">(Click to view)</span>
+              </a>
+            </strong>
+          </h5>
+          <p class="mb-1">
+            <em>Accepted in <strong>Wiley Health Science Reports</strong></em>
+          </p>
+        </div>
+
+        <!-- 2. BMC Public Health -->
+        <div class="resume-wrap p-4 mb-4 shadow-sm" 
+		style="background:#111; border-left:4px solid #FEBA17; padding:20px 25px; border-radius:6px; margin-bottom:25px;">
+          <h5>
+            <strong>
+              <a href="https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-025-23968-7" target="_blank" class="paper-link">
+                2. The effects of household water, sanitation, and hygiene on early childhood education enrollment: evidence from the 2022 Bangladesh demographic and health survey <span style="color:#FFFCFB;  font-size:13px;">(Click to view)</span> </a>
+            </strong>
+          </h5>
+          <p class="mb-1">
+            <em>Published at <strong>BMC Public Health (Q1 Journal, 2025)</strong></em>
+          </p>
+        </div>
+
+        <!-- 3. IEEE BECITHCON -->
+        <div class="resume-wrap p-4 mb-4 shadow-sm" 
+		style="background:#111; border-left:4px solid #FEBA17; padding:20px 25px; border-radius:6px; margin-bottom:25px;">
+          <h5>
+            <strong>
+              <a href="https://ieeexplore.ieee.org/abstract/document/10962658" target="_blank" class="paper-link">
+                3. Comparative Study of Feature Selection Techniques in Machine Learning Algorithms for Predicting Female School Attrition in Bangladesh <span style="color:#FFFCFB;  font-size:13px;">(Click to view)</span>
+              </a>
+            </strong>
+          </h5>
+          <p class="mb-1">
+            <em>Published at <strong>IEEE BECITHCON 2024</strong></em>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="ftco-section" id="achievement-section" style="background-color:#000; color:#ccc; padding:80px 0;">
+  <div class="container text-center pb-5">
+    <div class="row justify-content-center mb-5 pb-3">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h1 class="big" style="font-size:80px; font-weight:900; opacity:0.05; margin-bottom:-20px;">Achievements</h1>
+        <h2 class="mb-4" style="color:#fff; font-weight:700;">Achievements</h2>
+        <!-- <p>Highlights of my competitive and academic accomplishments.</p> -->
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-8 text-left ftco-animate">
+
+        <!-- Competitions & Honors  -->
+        <div style="background:#111; border-left:4px solid #d4af37; padding:25px; border-radius:6px; margin-bottom:25px;">
+          <h5 style="color:#d4af37; font-weight:600;">🏆 Competitions & Honors</h5>
+          <ul style="list-style-type:disc; color:#fff; margin-left:20px; line-height:1.8;">
+            <li><strong>2nd Runner-up</strong>, Data Innovators Challenge <span style="color:#d4af37;">(Oct 2024)</span></li>
+            <li><strong>2nd Runner-up</strong>, Machine Learning Olympiad <span style="color:#d4af37;">(June 2024)</span></li>
+            <li><strong>Finalist</strong>, Robi Datathon 3.0 <span style="color:#d4af37;">(May 2024)</span></li>
+			<li><strong>5th Position</strong>, National Science Olympiad (District-level) <span style="color:#d4af37;">(Feb 2019)</span></li>
+			<li><strong>1st Runner-up</strong>, Astrophysics Olympiad <span style="color:#d4af37;">(Jan 2017)</span></li>
+          </ul>
+        </div>
+
+        <!-- Academic Achievements -->
+        <div style="background:#111; border-left:4px solid #FEBA17; padding:25px; border-radius:6px;">
+          <h5 style="color:#FEBA17; font-weight:600;">🎓 Academic Achievements</h5>
+          <ul style="list-style-type:disc; color:#fff; margin-left:20px; line-height:1.8;">
+            <li><strong>Ranked 2nd in a class of 65 students</strong>- Department of Statistics, SUST</li>
+            <li>Received <strong>multiple University Scholarships</strong> for outstanding academic performance</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Sylhet, Bangladesh</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">01609360912</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="faizulislam095@gmail.com">faizulislam095@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">LinkedIn</h3>
+	            <p><a href="https://www.linkedin.com/in/faizul-islam-669941203/">My LinkedIn Profile(click here)</a></p>
+	          </div>
+          </div>
+
+		  <!-- <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br> -->
+					<!-- <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/rishabhnmishra/"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-twitter"></span></a></li>
+					  <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/rishabhnmishra/"><span class="icon-instagram"></span></a></li>
+					</ul> -->
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
