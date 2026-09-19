@@ -4,18 +4,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Faizul Islam — Data Scientist · Applied AI Engineer</title>
-<meta name="description" content="Data Scientist and Applied AI Engineer at Onwards Analytics. I build production ML, LLM and computer-vision systems: multi-tenant SaaS backends, RAG pipelines and real-time CV. Four peer-reviewed publications.">
+<meta name="description" content="Data Scientist and Applied AI Engineer. I build AI that turns data into decisions, products and growth: LLM pipelines, computer vision and multi-tenant SaaS backends in production.">
 <meta name="theme-color" content="#0B0D10">
 <link rel="canonical" href="https://iamfaizul.github.io/faizulislam.portfolio.github.io/">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Faizul Islam — Data Scientist · Applied AI Engineer">
-<meta property="og:description" content="Data Scientist and Applied AI Engineer at Onwards Analytics. I build production ML, LLM and computer-vision systems: multi-tenant SaaS backends, RAG pipelines and real-time CV. Four peer-reviewed publications.">
+<meta property="og:description" content="Data Scientist and Applied AI Engineer. I build AI that turns data into decisions, products and growth: LLM pipelines, computer vision and multi-tenant SaaS backends in production.">
 <meta property="og:url" content="https://iamfaizul.github.io/faizulislam.portfolio.github.io/">
 <meta property="og:image" content="https://iamfaizul.github.io/faizulislam.portfolio.github.io/assets/img/og-banner.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Faizul Islam — Data Scientist · Applied AI Engineer">
-<meta name="twitter:description" content="Data Scientist and Applied AI Engineer at Onwards Analytics. I build production ML, LLM and computer-vision systems: multi-tenant SaaS backends, RAG pipelines and real-time CV. Four peer-reviewed publications.">
+<meta name="twitter:description" content="Data Scientist and Applied AI Engineer. I build AI that turns data into decisions, products and growth: LLM pipelines, computer vision and multi-tenant SaaS backends in production.">
 <meta name="twitter:image" content="https://iamfaizul.github.io/faizulislam.portfolio.github.io/assets/img/og-banner.png">
 
 <link rel="icon" href="assets/img/favicon.ico" sizes="32x32">
@@ -51,16 +51,47 @@
 <body>
 
 <a class="skip-link" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"><span class="progress-bar"></span></div>
+<canvas id="cursor-flow" aria-hidden="true"></canvas>
 
-<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
-  <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
-  <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol>
-  <symbol id="i-medium" viewBox="0 0 24 24"><path fill="currentColor" d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></symbol>
-  <symbol id="i-kaggle" viewBox="0 0 24 24"><path fill="currentColor" d="M18.825 23.859c-.022.092-.117.141-.281.141h-3.139c-.187 0-.351-.082-.492-.248l-5.178-6.589-1.448 1.374v5.111c0 .235-.117.352-.351.352H5.505c-.236 0-.354-.117-.354-.352V.353c0-.234.118-.353.354-.353h2.431c.234 0 .351.119.351.353v14.343l6.203-6.272c.165-.165.33-.246.495-.246h3.239c.211 0 .329.089.354.264.023.176-.006.302-.088.379l-6.62 6.386 6.878 8.573c.093.104.135.192.077.279"/></symbol>
-  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
-  <symbol id="i-ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 5h6v6"/><path d="M19 5 10 14"/><path d="M18 14v4a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h4"/></symbol>
-  <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
-  <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 5l14 14M19 5 5 19"/></symbol>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false" class="icon-sprite">
+  <defs>
+    <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></symbol>
+    <symbol id="i-book-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/></symbol>
+    <symbol id="i-graduation-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.92a1 1 0 0 0-.02-1.84L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.83l8.57 3.91a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol>
+    <symbol id="i-trophy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14.54 21.69a.5.5 0 0 0 .93-.03l6.5-19a.5.5 0 0 0-.63-.63l-19 6.5a.5.5 0 0 0-.03.93l7.93 3.18a2 2 0 0 1 1.11 1.11z"/><path d="m21.85 2.15-10.94 10.94"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol>
+    <symbol id="i-kaggle" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18.825 23.859c-.022.092-.117.141-.281.141h-3.139c-.187 0-.351-.082-.492-.248l-5.178-6.589-1.448 1.374v5.111c0 .235-.117.352-.351.352H5.505c-.236 0-.354-.117-.354-.352V.353c0-.234.118-.353.354-.353h2.431c.234 0 .351.119.351.353v14.343l6.203-6.272c.165-.165.33-.246.495-.246h3.239c.211 0 .329.089.354.264.023.176-.006.302-.088.379l-6.62 6.386 6.878 8.573c.093.104.135.192.077.279"/></symbol>
+    <symbol id="i-medium" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-arrow-up-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol>
+    <symbol id="i-external-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-map-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.99-5.54 10.19-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.19 4 14.99 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+    <symbol id="i-languages" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></symbol>
+    <symbol id="i-database" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></symbol>
+    <symbol id="i-server" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="8" x="2" y="2" rx="2"/><rect width="20" height="8" x="2" y="14" rx="2"/><path d="M6 6h.01"/><path d="M6 18h.01"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+    <symbol id="i-bar-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m15.48 12.89 1.51 8.53a.5.5 0 0 1-.81.47l-3.58-2.69a1 1 0 0 0-1.2 0l-3.58 2.69a.5.5 0 0 1-.81-.47l1.51-8.53"/><circle cx="12" cy="8" r="6"/></symbol>
+    <symbol id="i-medal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15"/><path d="M11 12 5.12 2.2"/><path d="m13 12 5.88-9.8"/><path d="M8 7h8"/><circle cx="12" cy="17" r="5"/><path d="M12 18v-2h-.5"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M11.53 2.3a.53.53 0 0 1 .95 0l2.3 4.68a2.1 2.1 0 0 0 1.6 1.16l5.16.75a.53.53 0 0 1 .3.91l-3.74 3.64a2.1 2.1 0 0 0-.61 1.88l.88 5.14a.53.53 0 0 1-.77.56l-4.62-2.43a2.1 2.1 0 0 0-1.97 0L6.4 21.01a.53.53 0 0 1-.77-.56l.88-5.14a2.1 2.1 0 0 0-.61-1.88L2.16 9.8a.53.53 0 0 1 .29-.91l5.17-.75a2.1 2.1 0 0 0 1.6-1.16z"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></symbol>
+    <symbol id="i-sparkles" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9.94 15.5A2 2 0 0 0 8.5 14.06l-6.14-1.58a.5.5 0 0 1 0-.96L8.5 9.94A2 2 0 0 0 9.94 8.5l1.58-6.14a.5.5 0 0 1 .96 0l1.58 6.14A2 2 0 0 0 15.5 9.94l6.14 1.58a.5.5 0 0 1 0 .96L15.5 14.06a2 2 0 0 0-1.44 1.44l-1.58 6.14a.5.5 0 0 1-.96 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5l14 14M19 5 5 19"/></symbol>
+    <symbol id="i-file-text" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></symbol>
+  </defs>
 </svg>
 
 <header class="nav">
@@ -73,13 +104,18 @@
     </button>
 
     <nav class="nav-links" id="nav-links" aria-label="Primary">
+      <span class="nav-underline" aria-hidden="true"></span>
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#work">Work</a>
       <a href="#research">Research</a>
       <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#achievements">Achievements</a>
       <a href="#contact">Contact</a>
-      <a class="btn btn-primary btn-sm" href="assets/Faizul_Islam_CV.pdf" target="_blank" rel="noopener noreferrer">Résumé</a>
+      <a class="nav-ico" href="https://github.com/IamFaizul" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><svg class="ico" aria-hidden="true"><use href="#i-github"></use></svg></a>
+      <a class="nav-ico" href="https://www.linkedin.com/in/faizul-islam-669941203/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><svg class="ico" aria-hidden="true"><use href="#i-linkedin"></use></svg></a>
+      <a class="btn btn-primary btn-sm nav-cv" href="assets/Faizul_Islam_CV.pdf" target="_blank" rel="noopener noreferrer" aria-label="Résumé"><svg class="ico ico-btn cv-icon" aria-hidden="true"><use href="#i-file-text"></use></svg><span class="cv-text">Résumé</span><svg class="ico ico-btn cv-arrow" aria-hidden="true"><use href="#i-arrow-right"></use></svg></a>
     </nav>
   </div>
 </header>
@@ -88,21 +124,23 @@
 
   <!-- ========== Hero ========== -->
   <section class="hero" id="top">
+    <canvas class="hero-field" aria-hidden="true"></canvas>
     <div class="wrap hero-grid">
       <div class="hero-text">
         <p class="eyebrow">Data Scientist · Applied AI Engineer</p>
-        <h1>I build AI systems that survive <span class="accent">outside the notebook</span>.</h1>
-        <p class="hero-sub">Data Scientist at Onwards Analytics (Australia, remote). I take machine-learning and SaaS products from raw data to production: LLM pipelines, computer vision, multi-tenant backends. Backed by a Statistics degree (CGPA 3.86 / 4.00, ranked 2nd of 65) and four peer-reviewed publications.</p>
+        <h1 class="words">AI that turns data into <span class="accent">decisions, products and growth</span>.</h1>
+        <p class="tagline">Smart systems. Real ROI.</p>
+        <p class="hero-sub">I build AI-powered products end to end and plug them into how a business runs: machine learning, LLM and computer-vision pipelines, backend engineering and intelligent automation, taken from idea to production across SaaS platforms and analytics tools.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#work">View work</a>
-          <a class="btn btn-secondary" href="#contact">Get in touch</a>
+          <a class="btn btn-primary" href="#work">View work<svg class="ico ico-btn" aria-hidden="true"><use href="#i-arrow-right"></use></svg></a>
+          <a class="btn btn-secondary" href="#contact">Get in touch<svg class="ico ico-btn" aria-hidden="true"><use href="#i-arrow-right"></use></svg></a>
         </div>
-        <div class="icon-row">
-          <a href="https://github.com/IamFaizul" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg aria-hidden="true"><use href="#i-github"></use></svg></a>
-          <a href="https://www.linkedin.com/in/faizul-islam-669941203/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg aria-hidden="true"><use href="#i-linkedin"></use></svg></a>
-          <a href="https://medium.com/@faizulislam095" target="_blank" rel="noopener noreferrer" aria-label="Medium"><svg aria-hidden="true"><use href="#i-medium"></use></svg></a>
-          <a href="https://www.kaggle.com/faizulislam19095" target="_blank" rel="noopener noreferrer" aria-label="Kaggle"><svg aria-hidden="true"><use href="#i-kaggle"></use></svg></a>
-          <a href="mailto:faizulislam095@gmail.com" aria-label="Email"><svg aria-hidden="true"><use href="#i-mail"></use></svg></a>
+        <div class="social-row">
+          <a class="social-pill" href="https://github.com/IamFaizul" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#i-github"></use></svg><span>GitHub</span></a>
+          <a class="social-pill" href="https://www.linkedin.com/in/faizul-islam-669941203/" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#i-linkedin"></use></svg><span>LinkedIn</span></a>
+          <a class="social-pill" href="https://medium.com/@faizulislam095" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#i-medium"></use></svg><span>Medium</span></a>
+          <a class="social-pill" href="https://www.kaggle.com/faizulislam19095" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#i-kaggle"></use></svg><span>Kaggle</span></a>
+          <a class="social-pill" href="mailto:faizulislam095@gmail.com"><svg class="ico" aria-hidden="true"><use href="#i-mail"></use></svg><span>Email</span></a>
         </div>
       </div>
 
@@ -115,19 +153,22 @@
   <!-- ========== 01 About ========== -->
   <section class="section" id="about">
     <div class="wrap">
-      <p class="section-label"><span>01</span> / About</p>
-      <h2 class="reveal">About</h2>
+      <div class="section-head reveal">
+        <span class="sec-icon"><svg class="ico ico-lg" aria-hidden="true"><use href="#i-user"></use></svg></span>
+        <div class="section-head-text">
+          <p class="section-label"><span class="sec-num" data-num="01">01</span> / About</p>
+          <h2>About</h2>
+        </div>
+      </div>
 
       <div class="about-grid reveal">
-        <p class="lede">Data Scientist who turns real-world data into production AI systems. I build end-to-end machine-learning and SaaS products in industry: production backends, analytics systems, computer-vision pipelines and AI-driven automation, owning the path from raw data to shipped, revenue-generating features. Rigorous statistical foundations paired with full-stack engineering.</p>
+        <p class="lede">Data Scientist who turns real-world data into production AI systems. I build end-to-end machine-learning and SaaS products for industry: production backends, analytics engines, computer-vision pipelines and AI-driven automation, owning the path from raw data to shipped, revenue-generating features. A first-class Statistics background gives me the rigour; full-stack engineering lets me ship it. The result is AI that earns its place in the business.</p>
 
         <dl class="facts">
-          <div class="fact"><dt>Based in</dt><dd>Sylhet, Bangladesh (working remotely with Australia)</dd></div>
-          <div class="fact"><dt>Role</dt><dd>Data Scientist, Onwards Analytics</dd></div>
-          <div class="fact"><dt>Education</dt><dd>BSc Statistics, SUST · CGPA 3.86 / 4.00 · Ranked 2nd of 65</dd></div>
-          <div class="fact"><dt>Publications</dt><dd>4 peer-reviewed · 2 journal (Q1, Q2) · 2 conference (IEEE, ICASDS)</dd></div>
-          <div class="fact"><dt>Focus</dt><dd>LLM systems · Computer vision · Production ML · SaaS backends</dd></div>
-          <div class="fact"><dt>Languages</dt><dd>Bengali · English · Hindi · German (basic)</dd></div>
+          <div class="fact"><dt><svg class="ico ico-sm" aria-hidden="true"><use href="#i-map-pin"></use></svg>Based in</dt><dd>Bangladesh</dd></div>
+          <div class="fact"><dt><svg class="ico ico-sm" aria-hidden="true"><use href="#i-target"></use></svg>Focus</dt><dd>LLM systems · Computer vision · Production ML · SaaS backends</dd></div>
+          <div class="fact"><dt><svg class="ico ico-sm" aria-hidden="true"><use href="#i-zap"></use></svg>Currently</dt><dd>Building production AI at Onwards Analytics (Australia-based)</dd></div>
+          <div class="fact"><dt><svg class="ico ico-sm" aria-hidden="true"><use href="#i-languages"></use></svg>Languages</dt><dd>Bengali · English · Hindi · German (basic)</dd></div>
         </dl>
       </div>
     </div>
@@ -136,15 +177,22 @@
   <!-- ========== 02 Experience ========== -->
   <section class="section" id="experience">
     <div class="wrap">
-      <p class="section-label"><span>02</span> / Experience</p>
-      <h2 class="reveal">Experience</h2>
+      <div class="section-head reveal">
+        <span class="sec-icon"><svg class="ico ico-lg" aria-hidden="true"><use href="#i-briefcase"></use></svg></span>
+        <div class="section-head-text">
+          <p class="section-label"><span class="sec-num" data-num="02">02</span> / Experience</p>
+          <h2>Experience</h2>
+        </div>
+      </div>
 
       <div class="timeline">
 
         <article class="tl-org reveal">
           <div class="tl-head">
-            <img src="assets/img/logo-onwards.png" alt="Onwards Analytics logo" width="100" height="23" loading="lazy" decoding="async">
-            <h3>Onwards Analytics</h3>
+            <a class="org-link" href="https://onwardsanalytics.com.au/" target="_blank" rel="noopener noreferrer">
+              <img src="assets/img/logo-onwards.png" alt="Onwards Analytics logo" width="100" height="23" loading="lazy" decoding="async">
+              <h3>Onwards Analytics<svg class="ico ico-xs org-ext" aria-hidden="true"><use href="#i-external-link"></use></svg></h3>
+            </a>
           </div>
           <p class="tl-place">Australia (Remote)</p>
 
@@ -171,8 +219,10 @@
 
         <article class="tl-org reveal">
           <div class="tl-head">
-            <img src="assets/img/logo-datakothon.png" alt="DataKothon Research Lab logo" width="30" height="29" loading="lazy" decoding="async">
-            <h3>DataKothon Research Lab</h3>
+            <a class="org-link" href="https://www.linkedin.com/company/datakothonresearchlab/posts/?feedView=all" target="_blank" rel="noopener noreferrer">
+              <img src="assets/img/logo-datakothon.png" alt="DataKothon Research Lab logo" width="30" height="29" loading="lazy" decoding="async">
+              <h3>DataKothon Research Lab<svg class="ico ico-xs org-ext" aria-hidden="true"><use href="#i-external-link"></use></svg></h3>
+            </a>
           </div>
           <p class="tl-place">Bangladesh</p>
 
@@ -192,8 +242,13 @@
   <!-- ========== 03 Work ========== -->
   <section class="section" id="work">
     <div class="wrap">
-      <p class="section-label"><span>03</span> / Work</p>
-      <h2 class="reveal">Work</h2>
+      <div class="section-head reveal">
+        <span class="sec-icon"><svg class="ico ico-lg" aria-hidden="true"><use href="#i-layers"></use></svg></span>
+        <div class="section-head-text">
+          <p class="section-label"><span class="sec-num" data-num="03">03</span> / Work</p>
+          <h2>Work</h2>
+        </div>
+      </div>
 
       <div class="work-group">
         <div class="sub-head reveal">
@@ -220,7 +275,7 @@
             <div class="chips">
               <span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Supabase</span><span class="chip">Edge Functions</span><span class="chip">Stripe</span><span class="chip">Cloudflare</span>
             </div>
-            <div class="card-foot"><a class="card-link" href="https://mobipet.com.au/" target="_blank" rel="noopener noreferrer">Visit site <svg aria-hidden="true"><use href="#i-ext"></use></svg></a></div>
+            <div class="card-foot"><a class="card-link" href="https://mobipet.com.au/" target="_blank" rel="noopener noreferrer">Visit site <svg aria-hidden="true"><use href="#i-external-link"></use></svg></a></div>
           </article>
           <article class="card reveal">
             <h4>Nexlytics</h4>
@@ -230,7 +285,7 @@
             <div class="chips">
               <span class="chip">FastAPI</span><span class="chip">Python</span><span class="chip">Supabase</span><span class="chip">RAG</span><span class="chip">Stripe</span>
             </div>
-            <div class="card-foot"><a class="card-link" href="https://nexlytics.onwardsanalytics.com.au/" target="_blank" rel="noopener noreferrer">Visit site <svg aria-hidden="true"><use href="#i-ext"></use></svg></a></div>
+            <div class="card-foot"><a class="card-link" href="https://nexlytics.onwardsanalytics.com.au/" target="_blank" rel="noopener noreferrer">Visit site <svg aria-hidden="true"><use href="#i-external-link"></use></svg></a></div>
           </article>
           <article class="card reveal">
             <h4>Real-time pose estimation</h4>
@@ -243,11 +298,32 @@
             <div class="card-foot"><span class="tag-muted">Private</span></div>
           </article>
         </div>
+
+        <div class="also-strip">
+          <p class="also-label reveal">Also built at Onwards</p>
+          <div class="grid-also">
+            <article class="also-tile reveal">
+              <h4>OnwardsOS</h4>
+              <p>Internal AI-PMO platform: security audit that found and fixed 7 RLS-bypassing views, dedup logic, revived the CI migration pipeline.</p>
+              <div class="chips"><span class="chip">React</span><span class="chip">Supabase</span><span class="chip">PLpgSQL</span></div>
+            </article>
+            <article class="also-tile reveal">
+              <h4>Consulting-delivery automation</h4>
+              <p>Agentic n8n / Power Automate pipelines running end-to-end delivery workflows for enterprise clients.</p>
+              <div class="chips"><span class="chip">n8n</span><span class="chip">Power Automate</span><span class="chip">MCP</span></div>
+            </article>
+            <article class="also-tile reveal">
+              <h4>QA &amp; scraping infrastructure</h4>
+              <p>Playwright UI-test framework and GitHub Actions–scheduled scrapers across the product suite.</p>
+              <div class="chips"><span class="chip">Playwright</span><span class="chip">GitHub Actions</span><span class="chip">CI/CD</span></div>
+            </article>
+          </div>
+        </div>
       </div>
 
       <div class="work-group">
         <div class="sub-head reveal">
-          <h3>Open source &amp; research projects</h3>
+          <h3>My Projects</h3>
         </div>
 
         <div class="grid-3">
@@ -312,7 +388,11 @@
           </article>
         </div>
 
-        <p class="more-line reveal">More on <a href="https://github.com/IamFaizul?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub →</a> &nbsp;·&nbsp; <a href="https://www.kaggle.com/faizulislam19095" target="_blank" rel="noopener noreferrer">Kaggle →</a></p>
+        <p class="more-label reveal">More Projects</p>
+        <div class="more-actions reveal">
+          <a class="btn btn-secondary" href="https://github.com/IamFaizul?tab=repositories" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#i-github"></use></svg><span>Projects on GitHub</span><svg class="ico ico-nudge" aria-hidden="true"><use href="#i-arrow-up-right"></use></svg></a>
+          <a class="btn btn-secondary" href="https://www.kaggle.com/faizulislam19095" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#i-kaggle"></use></svg><span>Notebooks on Kaggle</span><svg class="ico ico-nudge" aria-hidden="true"><use href="#i-arrow-up-right"></use></svg></a>
+        </div>
       </div>
     </div>
   </section>
@@ -320,28 +400,33 @@
   <!-- ========== 04 Research ========== -->
   <section class="section" id="research">
     <div class="wrap">
-      <p class="section-label"><span>04</span> / Research</p>
-      <h2 class="reveal">Research</h2>
+      <div class="section-head reveal">
+        <span class="sec-icon"><svg class="ico ico-lg" aria-hidden="true"><use href="#i-book-open"></use></svg></span>
+        <div class="section-head-text">
+          <p class="section-label"><span class="sec-num" data-num="04">04</span> / Research</p>
+          <h2>Research</h2>
+        </div>
+      </div>
 
       <div class="research-list">
         <article class="research-item reveal">
-          <h3><a href="https://onlinelibrary.wiley.com/doi/10.1002/hsr2.71434" target="_blank" rel="noopener noreferrer">Predicting Child Development Across Literacy, Physical, Learning, and Social-Emotional Domains Using Supervised Machine Learning (MICS 2019, Bangladesh)<svg class="ext" aria-hidden="true"><use href="#i-ext"></use></svg></a></h3>
+          <h3><a href="https://onlinelibrary.wiley.com/doi/10.1002/hsr2.71434" target="_blank" rel="noopener noreferrer">Predicting Child Development Across Literacy, Physical, Learning, and Social-Emotional Domains Using Supervised Machine Learning (MICS 2019, Bangladesh)<svg class="ext" aria-hidden="true"><use href="#i-external-link"></use></svg></a></h3>
           <p class="research-meta"><span>Wiley Health Science Reports</span> <span class="badge">Q2</span></p>
         </article>
 
         <article class="research-item reveal">
-          <h3><a href="https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-025-23968-7" target="_blank" rel="noopener noreferrer">The Effects of Household Water, Sanitation, and Hygiene (WASH) on Early Childhood Education Enrollment in Bangladesh<svg class="ext" aria-hidden="true"><use href="#i-ext"></use></svg></a></h3>
+          <h3><a href="https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-025-23968-7" target="_blank" rel="noopener noreferrer">The Effects of Household Water, Sanitation, and Hygiene (WASH) on Early Childhood Education Enrollment in Bangladesh<svg class="ext" aria-hidden="true"><use href="#i-external-link"></use></svg></a></h3>
           <p class="research-meta"><span>BMC Public Health</span> <span class="badge">Q1</span></p>
         </article>
 
         <article class="research-item reveal">
-          <h3><a href="https://ieeexplore.ieee.org/abstract/document/10962658/" target="_blank" rel="noopener noreferrer">Comparative Study of Feature Selection Techniques in Predicting School Attrition Among Female Students in Bangladesh<svg class="ext" aria-hidden="true"><use href="#i-ext"></use></svg></a></h3>
+          <h3><a href="https://ieeexplore.ieee.org/abstract/document/10962658/" target="_blank" rel="noopener noreferrer">Comparative Study of Feature Selection Techniques in Predicting School Attrition Among Female Students in Bangladesh<svg class="ext" aria-hidden="true"><use href="#i-external-link"></use></svg></a></h3>
           <p class="research-meta"><span>IEEE BECITHCON 2024</span> <span class="badge">IEEE</span></p>
         </article>
 
         <article class="research-item reveal">
           <h3>Exploring the Impact of Malnutrition, Fever and Acute Respiratory Infections on the Physical Development of Children under Five in Bangladesh, Nepal and Pakistan (Punjab): Evidence from MICS 2019</h3>
-          <p class="research-meta"><span>International Conference on Applied Statistics &amp; Data Science (ICASDS), 2025</span> <span class="badge">Best Poster</span></p>
+          <p class="research-meta"><span>International Conference on Applied Statistics &amp; Data Science (ICASDS), 2025</span> <span class="badge"><svg class="ico ico-xs" aria-hidden="true"><use href="#i-award"></use></svg>Best Poster</span></p>
         </article>
       </div>
     </div>
@@ -350,105 +435,126 @@
   <!-- ========== 05 Skills ========== -->
   <section class="section" id="skills">
     <div class="wrap">
-      <p class="section-label"><span>05</span> / Skills</p>
-      <h2 class="reveal">Skills</h2>
+      <div class="section-head reveal">
+        <span class="sec-icon"><svg class="ico ico-lg" aria-hidden="true"><use href="#i-cpu"></use></svg></span>
+        <div class="section-head-text">
+          <p class="section-label"><span class="sec-num" data-num="05">05</span> / Skills</p>
+          <h2>Skills</h2>
+        </div>
+      </div>
 
       <div class="skill-groups">
         <div class="skill-group reveal">
-          <h3>Languages</h3>
+          <h3><svg class="ico ico-sm" aria-hidden="true"><use href="#i-code"></use></svg>Languages</h3>
           <div class="chips"><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">R</span></div>
         </div>
         <div class="skill-group reveal">
-          <h3>Machine Learning &amp; AI</h3>
+          <h3><svg class="ico ico-sm" aria-hidden="true"><use href="#i-sparkles"></use></svg>Machine Learning &amp; AI</h3>
           <div class="chips"><span class="chip">Machine Learning</span><span class="chip">Deep Learning</span><span class="chip">Computer Vision</span><span class="chip">NLP</span><span class="chip">LLMs (Gemini, Claude)</span><span class="chip">RAG</span><span class="chip">Generative AI</span><span class="chip">Agentic AI (Claude Agent SDK, MCP)</span><span class="chip">LLM pipeline design</span></div>
         </div>
         <div class="skill-group reveal">
-          <h3>Libraries &amp; Frameworks</h3>
+          <h3><svg class="ico ico-sm" aria-hidden="true"><use href="#i-wrench"></use></svg>Libraries &amp; Frameworks</h3>
           <div class="chips"><span class="chip">NumPy</span><span class="chip">Pandas</span><span class="chip">Scikit-learn</span><span class="chip">PyTorch</span><span class="chip">TensorFlow/Keras</span><span class="chip">FAISS</span><span class="chip">MediaPipe</span><span class="chip">Matplotlib</span><span class="chip">Plotly</span></div>
         </div>
         <div class="skill-group reveal">
-          <h3>Backend, Cloud &amp; Databases</h3>
+          <h3><svg class="ico ico-sm" aria-hidden="true"><use href="#i-server"></use></svg>Backend, Cloud &amp; Databases</h3>
           <div class="chips"><span class="chip">FastAPI</span><span class="chip">REST APIs</span><span class="chip">PostgreSQL</span><span class="chip">Supabase (RLS, Auth, Edge Functions)</span><span class="chip">Cloudflare Workers &amp; Pages</span><span class="chip">Stripe</span><span class="chip">Resend</span><span class="chip">Cloud Deployment &amp; Migration</span></div>
         </div>
         <div class="skill-group reveal">
-          <h3>DevOps, Automation &amp; Testing</h3>
+          <h3><svg class="ico ico-sm" aria-hidden="true"><use href="#i-zap"></use></svg>DevOps, Automation &amp; Testing</h3>
           <div class="chips"><span class="chip">Git</span><span class="chip">GitHub Actions</span><span class="chip">CI/CD</span><span class="chip">wrangler</span><span class="chip">n8n</span><span class="chip">Power Automate</span><span class="chip">MCP Servers</span><span class="chip">Playwright</span><span class="chip">Vitest</span><span class="chip">Postman</span></div>
         </div>
         <div class="skill-group reveal">
-          <h3>BI, Analytics &amp; Statistics</h3>
+          <h3><svg class="ico ico-sm" aria-hidden="true"><use href="#i-bar-chart"></use></svg>BI, Analytics &amp; Statistics</h3>
           <div class="chips"><span class="chip">Power BI</span><span class="chip">Tableau</span><span class="chip">Statistical Modelling</span><span class="chip">Hypothesis Testing</span><span class="chip">SPSS</span><span class="chip">STATA</span><span class="chip">SAS</span></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== 06 Achievements & Education ========== -->
-  <section class="section" id="achievements">
+  <!-- ========== 06 Education ========== -->
+  <section class="section" id="education">
     <div class="wrap">
-      <p class="section-label"><span>06</span> / Achievements &amp; Education</p>
-      <h2 class="reveal">Achievements &amp; Education</h2>
-
-      <div class="two-col">
-        <div class="reveal">
-          <h3 class="col-head">Honors &amp; Awards</h3>
-          <ul class="award-list">
-            <li><span class="name">Vice President</span><span class="ctx">SUST Data Science Club</span></li>
-            <li><span class="name">Best Poster Award</span><span class="ctx">ICASDS 2025, University of Dhaka</span></li>
-            <li><span class="name">2nd Runner-up</span><span class="ctx">Data Innovators Challenge 2024</span></li>
-            <li><span class="name">2nd Runner-up</span><span class="ctx">ML Olympiad 2024</span></li>
-            <li><span class="name">Finalist</span><span class="ctx">Robi Datathon 3.0 (2024)</span></li>
-            <li><span class="name">Kaggle 2× Expert</span></li>
-            <li><span class="name">University merit scholarships</span></li>
-            <li><span class="name">1st Runner-up</span><span class="ctx">Astrophysics Olympiad</span></li>
-            <li><span class="name">Champion</span><span class="ctx">Biggan Joyotshob (science fair)</span></li>
-            <li><span class="name">5th Place</span><span class="ctx">National Science Olympiad (Regional)</span></li>
-          </ul>
+      <div class="section-head reveal">
+        <span class="sec-icon"><svg class="ico ico-lg" aria-hidden="true"><use href="#i-graduation-cap"></use></svg></span>
+        <div class="section-head-text">
+          <p class="section-label"><span class="sec-num" data-num="06">06</span> / Education</p>
+          <h2>Education</h2>
         </div>
+      </div>
 
-        <div class="reveal">
-          <h3 class="col-head">Education</h3>
-          <ul class="edu-list">
-            <li class="edu-item">
-              <img src="assets/img/logo-sust.png" alt="Shahjalal University of Science and Technology logo" width="50" height="55" loading="lazy" decoding="async">
-              <div>
-                <h4>BSc in Statistics</h4>
-                <p class="ctx">Shahjalal University of Science and Technology (SUST), Sylhet</p>
-                <p class="mono">2020–2025 · CGPA 3.86 / 4.00</p>
-                <p class="ctx">Ranked 2nd in a class of 65</p>
-              </div>
-            </li>
-            <li class="edu-item">
-              <img src="assets/img/logo-bn.png" alt="Bangladesh Navy School &amp; College logo" width="50" height="50" loading="lazy" decoding="async">
-              <div>
-                <h4>Higher Secondary</h4>
-                <p class="ctx">Bangladesh Navy School &amp; College, Mongla</p>
-                <p class="mono">2018–2019 · GPA 5.00 / 5.00</p>
-              </div>
-            </li>
-          </ul>
-        </div>
+      <div class="timeline edu-timeline">
+        <article class="tl-org reveal">
+          <div class="tl-head">
+            <img src="assets/img/logo-sust.png" alt="Shahjalal University of Science and Technology logo" width="50" height="55" loading="lazy" decoding="async">
+            <h3>BSc in Statistics</h3>
+          </div>
+          <p class="tl-place"><a class="org-link org-link-inline" href="https://www.sust.edu/" target="_blank" rel="noopener noreferrer">Shahjalal University of Science and Technology (SUST)<svg class="ico ico-xs org-ext" aria-hidden="true"><use href="#i-external-link"></use></svg></a>, Sylhet · 2020–2025</p>
+          <p class="tl-metric">CGPA 3.86 / 4.00 · Ranked 2nd in a class of 65</p>
+        </article>
+
+        <article class="tl-org reveal">
+          <div class="tl-head">
+            <img src="assets/img/logo-bn.png" alt="Bangladesh Navy School &amp; College logo" width="50" height="50" loading="lazy" decoding="async">
+            <h3>Higher Secondary</h3>
+          </div>
+          <p class="tl-place">Bangladesh Navy School &amp; College, Mongla · 2018–2019</p>
+          <p class="tl-metric">GPA 5.00 / 5.00</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- ========== 07 Contact ========== -->
+  <!-- ========== 07 Achievements ========== -->
+  <section class="section" id="achievements">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="sec-icon"><svg class="ico ico-lg" aria-hidden="true"><use href="#i-trophy"></use></svg></span>
+        <div class="section-head-text">
+          <p class="section-label"><span class="sec-num" data-num="07">07</span> / Achievements</p>
+          <h2>Achievements</h2>
+        </div>
+      </div>
+
+      <ul class="award-list reveal">
+        <li><svg class="ico ico-sm" aria-hidden="true"><use href="#i-star"></use></svg><span class="name">Vice President</span><span class="ctx">SUST Data Science Club</span></li>
+        <li><svg class="ico ico-sm" aria-hidden="true"><use href="#i-award"></use></svg><span class="name">Best Poster Award</span><span class="ctx">ICASDS 2025, University of Dhaka</span></li>
+        <li><svg class="ico ico-sm" aria-hidden="true"><use href="#i-medal"></use></svg><span class="name">2nd Runner-up</span><span class="ctx">Data Innovators Challenge 2024</span></li>
+        <li><svg class="ico ico-sm" aria-hidden="true"><use href="#i-medal"></use></svg><span class="name">2nd Runner-up</span><span class="ctx">ML Olympiad 2024</span></li>
+        <li><svg class="ico ico-sm" aria-hidden="true"><use href="#i-medal"></use></svg><span class="name">Finalist</span><span class="ctx">Robi Datathon 3.0 (2024)</span></li>
+        <li><svg class="ico ico-sm" aria-hidden="true"><use href="#i-award"></use></svg><span class="name">Kaggle 2× Expert</span></li>
+        <li><svg class="ico ico-sm" aria-hidden="true"><use href="#i-star"></use></svg><span class="name">University merit scholarships</span></li>
+        <li><svg class="ico ico-sm" aria-hidden="true"><use href="#i-medal"></use></svg><span class="name">1st Runner-up</span><span class="ctx">Astrophysics Olympiad</span></li>
+        <li><svg class="ico ico-sm" aria-hidden="true"><use href="#i-trophy"></use></svg><span class="name">Champion</span><span class="ctx">Biggan Joyotshob (science fair)</span></li>
+        <li><svg class="ico ico-sm" aria-hidden="true"><use href="#i-medal"></use></svg><span class="name">5th Place</span><span class="ctx">National Science Olympiad (Regional)</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ========== 08 Contact ========== -->
   <section class="section contact" id="contact">
     <div class="wrap">
-      <p class="section-label"><span>07</span> / Contact</p>
-      <h2>Let's build something that ships.</h2>
+      <div class="section-head section-head-center reveal">
+        <span class="sec-icon"><svg class="ico ico-lg" aria-hidden="true"><use href="#i-send"></use></svg></span>
+        <div class="section-head-text">
+          <p class="section-label"><span class="sec-num" data-num="08">08</span> / Contact</p>
+          <h2 class="words">Let's build something that ships.</h2>
+        </div>
+      </div>
       <p class="lede">Open to data science and applied AI roles, research collaborations, and interesting production problems.</p>
 
       <div class="contact-actions">
         <a class="btn btn-primary" href="mailto:faizulislam095@gmail.com">faizulislam095@gmail.com</a>
-        <button class="btn btn-secondary btn-sm" type="button" data-copy="faizulislam095@gmail.com">Copy</button>
+        <button class="btn btn-secondary btn-sm copy-btn" type="button" data-copy="faizulislam095@gmail.com"><svg class="ico ico-btn i-copy" aria-hidden="true"><use href="#i-copy"></use></svg><svg class="ico ico-btn i-check" aria-hidden="true"><use href="#i-check"></use></svg><span class="copy-label">Copy</span></button>
       </div>
 
-      <div class="contact-links">
-        <a href="https://www.linkedin.com/in/faizul-islam-669941203/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://github.com/IamFaizul" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://medium.com/@faizulislam095" target="_blank" rel="noopener noreferrer">Medium</a>
-        <a href="https://www.kaggle.com/faizulislam19095" target="_blank" rel="noopener noreferrer">Kaggle</a>
-        <a href="assets/Faizul_Islam_CV.pdf" target="_blank" rel="noopener noreferrer">Résumé (PDF)</a>
+      <div class="social-row social-row-center">
+        <a class="social-pill" href="https://github.com/IamFaizul" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#i-github"></use></svg><span>GitHub</span></a>
+        <a class="social-pill" href="https://www.linkedin.com/in/faizul-islam-669941203/" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#i-linkedin"></use></svg><span>LinkedIn</span></a>
+        <a class="social-pill" href="https://medium.com/@faizulislam095" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#i-medium"></use></svg><span>Medium</span></a>
+        <a class="social-pill" href="https://www.kaggle.com/faizulislam19095" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#i-kaggle"></use></svg><span>Kaggle</span></a>
+        <a class="social-pill" href="mailto:faizulislam095@gmail.com"><svg class="ico" aria-hidden="true"><use href="#i-mail"></use></svg><span>Email</span></a>
+        <a class="social-pill" href="assets/Faizul_Islam_CV.pdf" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#i-file-text"></use></svg><span>Résumé (PDF)</span></a>
       </div>
     </div>
   </section>
@@ -458,9 +564,11 @@
 <footer class="footer">
   <div class="wrap footer-inner">
     <span>© 2026 Faizul Islam</span>
-    <span>Designed and built by hand · No frameworks</span>
+    <span><svg class="ico ico-sm" aria-hidden="true"><use href="#i-sparkles"></use></svg>Designed and built by hand · No frameworks</span>
   </div>
 </footer>
+
+<button class="to-top" type="button" aria-label="Back to top"><svg class="ico" aria-hidden="true"><use href="#i-arrow-up"></use></svg></button>
 
 <script src="assets/js/main.js" defer></script>
 </body>
