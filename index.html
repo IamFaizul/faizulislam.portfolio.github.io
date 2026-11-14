@@ -240,91 +240,138 @@
 
   <!-- ========== 03 Work ========== -->
   <section class="section" id="work">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <span class="sec-icon"><svg class="ico ico-lg" aria-hidden="true"><use href="#i-layers"></use></svg></span>
-        <div class="section-head-text">
-          <p class="section-label"><span class="sec-num" data-num="03">03</span> / Work</p>
-          <h2>Work</h2>
-        </div>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="sec-icon"><svg class="ico ico-lg" aria-hidden="true"><use href="#i-layers"></use></svg></span>
+      <div class="section-head-text">
+        <p class="section-label"><span class="sec-num" data-num="03">03</span> / Work</p>
+        <h2>Work</h2>
+      </div>
+    </div>
+
+    <div class="work-group">
+      <div class="sub-head reveal">
+        <h3>Production systems</h3>
+        <span class="sub-note">Built at Onwards Analytics</span>
       </div>
 
-      <div class="work-group">
-        <div class="sub-head reveal">
-          <h3>Production systems</h3>
-          <span class="sub-note">Built at Onwards Analytics</span>
-        </div>
-
-        <div class="grid-2">
-          <article class="card reveal">
-            <h4>Mockingbird</h4>
-            <p class="role">Co-lead engineer · Multi-tenant AI SaaS</p>
-            <p class="desc"><span class="part-label">What it is</span>An ad-intelligence platform that watches competitor Meta ads every day and turns the best ones into on-brand creative for each customer.</p>
-            <p class="desc"><span class="part-label">What I owned</span>The generation engine and its tenant model, the scoring and preference-learning loop that makes each daily drop sharper, and the pre-launch security and codebase audit. Now co-leading the platform's live product.</p>
-            <div class="chips">
-              <span class="chip">Cloudflare Workers</span><span class="chip">Supabase</span><span class="chip">PostgreSQL/RLS</span><span class="chip">Gemini</span><span class="chip">Ideogram</span><span class="chip">TypeScript</span><span class="chip">Stripe</span>
-            </div>
-            <div class="card-foot">
-  <span class="tag-muted">Live</span>
-  <a href="https://mockingbird.digital/lifetime" target="_blank" rel="noopener noreferrer">Visit Website <svg class="ext" aria-hidden="true"><use href="#i-external-link"></use></svg></a>
-</div>
-          </article>
-          <article class="card reveal">
-            <h4>MobiPet</h4>
-            <p class="role">Full-stack engineer · Two-sided marketplace</p>
-            <p class="desc"><span class="part-label">What it is</span>A live marketplace where pet owners book after-hours home visits and mobile vets claim the jobs.</p>
-            <p class="desc"><span class="part-label">What I owned</span>Taking the product through UAT to go-live: auth and role routing, booking and payment-adjacent integrity, geolocation, admin tooling, and the guarded migration and release-verification scripts that keep live customer data safe.</p>
-            <div class="chips">
-              <span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Supabase</span><span class="chip">Edge Functions</span><span class="chip">Stripe</span><span class="chip">Cloudflare</span>
-            </div>
-            <div class="card-foot"><a class="card-link" href="https://mobipet.com.au/" target="_blank" rel="noopener noreferrer">Visit site <svg aria-hidden="true"><use href="#i-external-link"></use></svg></a></div>
-          </article>
-          <article class="card reveal">
-            <h4>Nexlytics</h4>
-            <p class="role">Backend engineer · B2B analytics SaaS</p>
-            <p class="desc"><span class="part-label">What it is</span>Uploads a Power BI report and returns a health score, compliance audit, issue list and documentation.</p>
-            <p class="desc"><span class="part-label">What I owned</span>The production backend end to end, including the audit-trail and scoring engines and the RAG pipelines that power its AI explanations.</p>
-            <div class="chips">
-              <span class="chip">FastAPI</span><span class="chip">Python</span><span class="chip">Supabase</span><span class="chip">RAG</span><span class="chip">Stripe</span>
-            </div>
-            <div class="card-foot"><a class="card-link" href="https://nexlytics.onwardsanalytics.com.au/" target="_blank" rel="noopener noreferrer">Visit site <svg aria-hidden="true"><use href="#i-external-link"></use></svg></a></div>
-          </article>
-          <article class="card reveal">
-            <h4>AquaCoach</h4>
-            <p class="role">ML engineer · Real-time computer vision</p>
-            <p class="desc"><span class="part-label">What it is</span>A swimming technique-analysis platform: a biomechanical pose-estimation pipeline that runs on live video and feeds downstream coaching analysis.</p>
-            <p class="desc"><span class="part-label">What I owned</span>Full lifecycle: architecture, model selection and integration across MediaPipe, RTMPose, ViTPose and YOLOv8, the metric layer, benchmarking, and the optimisation loop that lifted accuracy and inference reliability.</p>
-            <div class="chips">
-              <span class="chip">MediaPipe</span><span class="chip">RTMPose</span><span class="chip">ViTPose</span><span class="chip">YOLOv8</span><span class="chip">Python</span>
-            </div>
-            <div class="card-foot"><span class="tag-muted">Private</span></div>
-          </article>
-        </div>
-
-        <div class="also-strip">
-          <p class="also-label reveal">Also built at Onwards</p>
-          <div class="grid-also">
-            <article class="also-tile reveal">
-              <h4>OnwardsOS</h4>
-              <p>Internal AI-PMO platform: security audit that found and fixed 7 RLS-bypassing views, dedup logic, revived the CI migration pipeline.</p>
-              <div class="chips"><span class="chip">React</span><span class="chip">Supabase</span><span class="chip">PLpgSQL</span></div>
-            </article>
-            <article class="also-tile reveal">
-              <h4>Consulting-delivery automation</h4>
-              <p>Agentic n8n / Power Automate pipelines running end-to-end delivery workflows for enterprise clients.</p>
-              <div class="chips"><span class="chip">n8n</span><span class="chip">Power Automate</span><span class="chip">MCP</span></div>
-            </article>
-            <article class="also-tile reveal">
-              <h4>QA &amp; scraping infrastructure</h4>
-              <p>Playwright UI-test framework and GitHub Actions–scheduled scrapers across the product suite.</p>
-              <div class="chips"><span class="chip">Playwright</span><span class="chip">GitHub Actions</span><span class="chip">CI/CD</span></div>
-            </article>
+      <div class="grid-2">
+        <article class="card reveal">
+          <h4>Mockingbird</h4>
+          <p class="role">Co-lead engineer · Multi-tenant AI SaaS</p>
+          <p class="desc"><span class="part-label">What it is</span>An ad-intelligence platform that watches competitor Meta ads every day and turns the best ones into on-brand creative for each customer.</p>
+          <p class="desc"><span class="part-label">What I owned</span>The generation engine and its tenant model, the scoring and preference-learning loop that makes each daily drop sharper, and the pre-launch security and codebase audit. Now co-leading the platform's live product.</p>
+          <div class="chips">
+            <span class="chip">Cloudflare Workers</span>
+            <span class="chip">Supabase</span>
+            <span class="chip">PostgreSQL/RLS</span>
+            <span class="chip">Gemini</span>
+            <span class="chip">Ideogram</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">Stripe</span>
           </div>
-        </div>
+          <div class="card-foot">
+            <span class="tag-muted">Live</span>
+            <a class="card-link" href="https://mockingbird.digital/lifetime" target="_blank" rel="noopener noreferrer">
+              Visit Website <svg aria-hidden="true"><use href="#i-external-link"></use></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <h4>MobiPet</h4>
+          <p class="role">Full-stack engineer · Two-sided marketplace</p>
+          <p class="desc"><span class="part-label">What it is</span>A live marketplace where pet owners book after-hours home visits and mobile vets claim the jobs.</p>
+          <p class="desc"><span class="part-label">What I owned</span>Taking the product through UAT to go-live: auth and role routing, booking and payment-adjacent integrity, geolocation, admin tooling, and the guarded migration and release-verification scripts that keep live customer data safe.</p>
+          <div class="chips">
+            <span class="chip">React</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">Supabase</span>
+            <span class="chip">Edge Functions</span>
+            <span class="chip">Stripe</span>
+            <span class="chip">Cloudflare</span>
+          </div>
+          <div class="card-foot">
+            <a class="card-link" href="https://mobipet.com.au/" target="_blank" rel="noopener noreferrer">
+              Visit site <svg aria-hidden="true"><use href="#i-external-link"></use></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <h4>Nexlytics</h4>
+          <p class="role">Backend engineer · B2B analytics SaaS</p>
+          <p class="desc"><span class="part-label">What it is</span>Uploads a Power BI report and returns a health score, compliance audit, issue list and documentation.</p>
+          <p class="desc"><span class="part-label">What I owned</span>The production backend end to end, including the audit-trail and scoring engines and the RAG pipelines that power its AI explanations.</p>
+          <div class="chips">
+            <span class="chip">FastAPI</span>
+            <span class="chip">Python</span>
+            <span class="chip">Supabase</span>
+            <span class="chip">RAG</span>
+            <span class="chip">Stripe</span>
+          </div>
+          <div class="card-foot">
+            <a class="card-link" href="https://nexlytics.onwardsanalytics.com.au/" target="_blank" rel="noopener noreferrer">
+              Visit site <svg aria-hidden="true"><use href="#i-external-link"></use></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <h4>AquaCoach</h4>
+          <p class="role">ML engineer · Real-time computer vision</p>
+          <p class="desc"><span class="part-label">What it is</span>A swimming technique-analysis platform: a biomechanical pose-estimation pipeline that runs on live video and feeds downstream coaching analysis.</p>
+          <p class="desc"><span class="part-label">What I owned</span>Full lifecycle: architecture, model selection and integration across MediaPipe, RTMPose, ViTPose and YOLOv8, the metric layer, benchmarking, and the optimisation loop that lifted accuracy and inference reliability.</p>
+          <div class="chips">
+            <span class="chip">MediaPipe</span>
+            <span class="chip">RTMPose</span>
+            <span class="chip">ViTPose</span>
+            <span class="chip">YOLOv8</span>
+            <span class="chip">Python</span>
+          </div>
+          <div class="card-foot">
+            <span class="tag-muted">Private</span>
+          </div>
+        </article>
       </div>
 
-      <div class="work-group">
-        <div class="sub-head reveal">
+      <div class="also-strip">
+        <p class="also-label reveal">Also built at Onwards</p>
+        <div class="grid-also">
+          <article class="also-tile reveal">
+            <h4>OnwardsOS</h4>
+            <p>Internal AI-PMO platform: security audit that found and fixed 7 RLS-bypassing views, dedup logic, revived the CI migration pipeline.</p>
+            <div class="chips">
+              <span class="chip">React</span>
+              <span class="chip">Supabase</span>
+              <span class="chip">PLpgSQL</span>
+            </div>
+          </article>
+
+          <article class="also-tile reveal">
+            <h4>Consulting-delivery automation</h4>
+            <p>Agentic n8n / Power Automate pipelines running end-to-end delivery workflows for enterprise clients.</p>
+            <div class="chips">
+              <span class="chip">n8n</span>
+              <span class="chip">Power Automate</span>
+              <span class="chip">MCP</span>
+            </div>
+          </article>
+
+          <article class="also-tile reveal">
+            <h4>QA &amp; scraping infrastructure</h4>
+            <p>Playwright UI-test framework and GitHub Actions–scheduled scrapers across the product suite.</p>
+            <div class="chips">
+              <span class="chip">Playwright</span>
+              <span class="chip">GitHub Actions</span>
+              <span class="chip">CI/CD</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-group">
           <h3>My Projects</h3>
         </div>
 
